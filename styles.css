@@ -1,0 +1,82 @@
+body {
+    background-color: #000000; /* Black background for the console */
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: "Courier New", Courier, monospace; /* Monospace font for console look */
+    color: #00ff00; /* Green text for console-style feel */
+  }
+  
+  @keyframes glowingBorder {
+    0% {
+      box-shadow: 0 0 10px #00ff00, 0 0 20px #00ff00, 0 0 30px #00ff00;
+      border-radius: 10px; /* Slightly rounded corners at the start */
+    }
+    50% {
+      box-shadow: 0 0 15px #00cc00, 0 0 30px #00cc00, 0 0 45px #00cc00;
+      border-radius: 30px; /* More rounded at the animation's peak */
+    }
+    100% {
+      box-shadow: 0 0 10px #00ff00, 0 0 20px #00ff00, 0 0 30px #00ff00;
+      border-radius: 10px; /* Back to slightly rounded corners */
+    }
+  }
+  
+  #game {
+    width: 600px; 
+    height: 400px; /* Added height for a defined form */
+    background-color: #1a1a1a; /* Dark gray background */
+    color: #00ff00; /* Green text */
+    border: 2px solid #00ff00; /* Green border */
+    padding: 20px;
+    border-radius: 10px; /* Base border radius for a rounded look */
+    animation: glowingBorder 1.5s infinite; /* Adds glowing animation */
+    box-shadow: 0 0 10px #00ff00; /* Initial subtle glow */
+  }
+  
+  
+  #text {
+    background-color: #000000; /* Black background */
+    color: #00ff00; /* Console green */
+    padding: 10px;
+    border: 1px solid #00ff00; /* Green border */
+    margin-bottom: 10px;
+  }
+  
+  #stats, 
+  #controls, 
+  #monsterStats {
+    background-color: #1a1a1a; /* Dark gray background */
+    color: #00ff00; /* Green text */
+    border: 1px solid #00ff00; /* Green border */
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  
+  #monsterStats {
+    display: none; /* Initially hidden */
+  }
+  
+  .stat {
+    display: block; /* Makes each stat appear on a new line */
+    margin-bottom: 5px;
+  }
+  
+  button {
+    cursor: pointer;
+    font-family: "Courier New", Courier, monospace; /* Monospace for console look */
+    color: #000000; /* Black text */
+    background-color: #00ff00; /* Green button background */
+    border: 1px solid #00ff00; /* Green border */
+    padding: 5px 10px;
+    margin-right: 5px;
+  }
+  
+  button:hover {
+    background-color: #00cc00; /* Darker green when hovered */
+  }
+  
+  
+  
