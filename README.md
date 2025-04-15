@@ -1,2 +1,2 @@
 # RPG
-Role Playing Game
+Role Playing Game with JavaScript
